@@ -1,4 +1,8 @@
-const newYears = '1 Jan 2021';
+const currentDay = new Date();
+var currentYear = currentDay.getFullYear();
+const newYears = `1 Jan ${currentYear+1}`;
+
+
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
